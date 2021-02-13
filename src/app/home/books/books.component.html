@@ -1,0 +1,23 @@
+<ion-list>
+  <ion-item>
+    <ion-label slot="start">
+      <strong>Book ISBN</strong>
+    </ion-label>
+    <ion-label slot="start">
+      <strong>Author of the book</strong>
+    </ion-label>
+    <ion-label slot="start">
+      <strong>Book Title</strong>
+    </ion-label>
+    <ion-label slot="start">
+     <strong>Publishing house</strong>
+    </ion-label>
+    <ion-label slot="start">
+      <strong>Year of publication</strong>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+
+<app-book *ngFor="let book of books; let bookIndex = index" [bookItem]="book" [bookIndex]='bookIndex'></app-book>
+

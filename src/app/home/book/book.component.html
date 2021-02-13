@@ -1,0 +1,27 @@
+<ion-list>
+  <ion-item>
+    <ion-label slot="start">
+      {{ book.ISBN }}
+    </ion-label>
+    <ion-label slot="start">
+      {{ book.author }}
+    </ion-label>
+    <ion-label slot="start">
+      {{ book.name }}
+    </ion-label>
+    <ion-label slot="start">
+      {{ book.publisher }}
+    </ion-label>
+    <ion-label slot="start">
+      {{ book.year }}
+    </ion-label>
+
+    <ion-button slot="end" color="danger" (click)="deleteThisBook()">
+      <ion-icon name="trash" slot="start"></ion-icon>
+      DELETE BOOK
+    </ion-button>
+
+  </ion-item>
+
+</ion-list>
+
